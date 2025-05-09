@@ -2,7 +2,11 @@ const searchBar = document.getElementById("searchBar");
 const dropdown = document.getElementById("searchDropdown");
 
 const players = [
-  { name: "Héctor Fort", id: "hector-fort" }
+  { name: "Héctor Fort", id: "hector-fort" },
+  { name: "Luke Shaw", id: "luke-shaw" },
+  { name: "Fabio Baldé", id: "fabio-balde" },
+  { name: "Lionel Messi", id: "lionel-messi" },
+  { name: "Cristiano Ronaldo", id: "cristiano-ronaldo" },
 ];
 
 searchBar.addEventListener("input", function (e) {
@@ -23,12 +27,16 @@ searchBar.addEventListener("input", function (e) {
       const item = document.createElement("div");
       item.className = "dropdown-item";
       item.textContent = player.name;
+
       item.addEventListener("click", () => {
+
+        const homepage = document.getElementById("homepage");
+        if (homepage) homepage.style.display = "none";
+
         document.querySelectorAll(".player-section").forEach(section => {
           section.classList.add("hidden");
         });
 
-        // Show selected
         const target = document.getElementById(player.id);
         if (target) {
           target.classList.remove("hidden");
@@ -37,8 +45,10 @@ searchBar.addEventListener("input", function (e) {
           dropdown.style.display = "none";
         }
       });
+
       dropdown.appendChild(item);
     });
+
     dropdown.style.display = "block";
   } else {
     dropdown.style.display = "none";
@@ -50,3 +60,12 @@ document.addEventListener("click", function (e) {
     dropdown.style.display = "none";
   }
 });
+
+function returnhome() {
+  const homepage = document.getElementById("homepage");
+  if (homepage) homepage.style.display = "block";
+
+  document.querySelectorAll(".player-section").forEach(section => {
+    section.classList.add("hidden");
+  });
+}

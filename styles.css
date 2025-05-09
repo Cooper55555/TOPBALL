@@ -53,7 +53,6 @@ header {
 }
 
 .stats, .traits {
-  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -135,6 +134,79 @@ header {
   background-color: #e24e38;
 }
 
+.bar-inner-blue {
+  height: 100%;
+  background-color: #358ad4;
+}
+
+.bar-inner-purple {
+  height: 100%;
+  background-color: #cb34e6;
+}
+
+.rating-orange {
+  background-color: #eca82b;
+  text-align: center;
+  color: white;
+  width: 30px;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#ratings-orange-main-stat {
+  justify-content: right;
+  display: flex;
+}
+
+#orange-stats {
+  border-right: 8px solid #eca82b;
+}
+
+.rating-blue {
+  background-color: #358ad4;
+  text-align: center;
+  color: white;
+  width: 30px;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#ratings-blue-main-stat {
+  justify-content: right;
+  display: flex;
+}
+
+#blue-stats {
+  border-right: 8px solid #358ad4;
+}
+
+.rating-green {
+  background-color: #10b981;
+  text-align: center;
+  color: white;
+  width: 30px;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#ratings-green-main-stat {
+  justify-content: right;
+  display: flex;
+}
+
+#green-stats {
+  border-right: 8px solid #10b981;
+}
+
 .positions {
   background-color: #fff;
   padding: 1.5rem;
@@ -154,7 +226,8 @@ header {
   border-right: 3px solid #333;
   border-left: 3px solid #333;
   border-bottom: 3px solid #333;
-  border-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   top: 70px;
   right: 2rem;
   width: 316px;
@@ -173,6 +246,40 @@ header {
 
 .hidden {
   display: none !important;
+}
+
+.date-time {
+  margin-top: -20px;
+  color: darkgray;
+  font-size: 15px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: #fff;
+}
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 24px;
+}
+.hero button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.hometext {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

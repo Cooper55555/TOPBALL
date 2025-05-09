@@ -8,10 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>TOPBALL</h1>
+        <h1 onclick="returnhome()" class="hometext">TOPBALL</h1>
         <input type="text" id="searchBar" class="search-input" placeholder="Search players...">
         <div id="searchDropdown" class="dropdown"></div>
       </header>
+
+    <div id="homepage">
+      <section class="hero">
+        <h1>Discover Football Like Never Before On TOPBALL!</h1>
+        <p>Track your favorite players, stay updated, analyze smarter.</p>
+        <button>Join Discord</button>
+      </section>
+    </div>
     
       <div id="hector-fort" class="player-section hidden" data-name="Héctor Fort">
       <main class="container">
@@ -20,25 +28,31 @@
             <img src="https://images.fotmob.com/image_resources/playerimages/1490110.png" alt="Héctor Fort">
             <div>
               <h2>Héctor Fort</h2>
+              <p class="date-time">Updated On: 8-5-2025</p>
             </div>
           </div>
-          <div class="stats">
-            <p><strong>Height:</strong> 185 cm</p>
-            <p><strong>Age:</strong> 18</p>
-            <p><strong>Shirt:</strong> 32</p>
-            <p><strong>Foot:</strong> Right</p>
-            <p><strong>Country:</strong> Spain</p>
-            <p><strong>Market Value:</strong> €600K</p>
+          <div id="ratings-orange-main-stat">
+          <label class="rating-orange">5.3</label>
+          </div>
+          <div class="stats" id="orange-stats">
+            <p><strong>Height:</strong><br> 185cm</p>
+            <p><strong>Weight:</strong><br> 78kg</p>
+            <p><strong>Age:</strong><br> 18</p>
+            <p><strong>Shirt:</strong><br> 32</p>
+            <p><strong>Foot:</strong><br> Right</p>
+            <p><strong>Country:</strong><br> Spain</p>
+            <p><strong>Club:</strong><br> Barcelona</p>
+            <p><strong>Market Value:</strong><br> €10M</p>
           </div>
         </section>
     
         <section class="card graphic-section">
           <div class="bar-graphic">
-            <div class="bar-row"><span class="bar-label">Shooting</span><div class="bar"><div class="bar-inner-orange" style="width: 35%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Shooting</span><div class="bar"><div class="bar-inner-orange" style="width: 38%;"></div></div></div>
             <div class="bar-row"><span class="bar-label">Passing</span><div class="bar"><div class="bar-inner-green" style="width: 71%;"></div></div></div>
-            <div class="bar-row"><span class="bar-label">Defending</span><div class="bar"><div class="bar-inner-orange" style="width: 67%;"></div></div></div>
-            <div class="bar-row"><span class="bar-label">Dribbling</span><div class="bar"><div class="bar-inner-orange" style="width: 43%;"></div></div></div>
-            <div class="bar-row"><span class="bar-label">Positioning</span><div class="bar"><div class="bar-inner-red" style="width: 29%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Defending</span><div class="bar"><div class="bar-inner-orange" style="width: 68%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Dribbling</span><div class="bar"><div class="bar-inner-orange" style="width: 48%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Positioning</span><div class="bar"><div class="bar-inner-orange" style="width: 49%;"></div></div></div>
             <div class="bar-row"><span class="bar-label">Weak Foot</span><div class="bar"><div class="bar-inner-orange" style="width: 51%;"></div></div></div>
             <div class="bar-row"><span class="bar-label">Skills</span><div class="bar"><div class="bar-inner-orange" style="width: 56%;"></div></div></div>
           </div>
@@ -51,12 +65,232 @@
         <section class="card career" style="grid-column: 1 / -1;">
         <br>
           <div class="career-stats">
-            <div><strong>Goals</strong><p>6</p></div>
-            <div><strong>Assists</strong><p>12</p></div>
-            <div><strong>Matches</strong><p>31</p></div>
-            <div><strong>Started</strong><p>27</p></div>
-            <div><strong>Yellow Cards</strong><p>3</p></div>
+            <div><strong>Goals</strong><p>0</p></div>
+            <div><strong>Assists</strong><p>3</p></div>
+            <div><strong>Matches</strong><p>27</p></div>
+            <div><strong>Minutes</strong><p>1.190</p></div>
+            <div><strong>Yellow Cards</strong><p>2</p></div>
             <div><strong>Red Cards</strong><p>0</p></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="luke-shaw" class="player-section hidden" data-name="Luke Shaw">
+      <main class="container">
+        <section class="card">
+          <div class="profile">
+            <img src="https://images.fotmob.com/image_resources/playerimages/362694.png" alt="Luke Shaw">
+            <div>
+              <h2>Luke Shaw</h2>
+              <p class="date-time">Updated On: 8-5-2025</p>
+            </div>
+          </div>
+          <div id="ratings-orange-main-stat">
+          <label class="rating-orange">4.9</label>
+        </div>
+          <div class="stats" id="orange-stats">
+            <p><strong>Height:</strong><br> 178cm</p>
+            <p><strong>Weight:</strong><br> 75kg</p>
+            <p><strong>Age:</strong><br> 29</p>
+            <p><strong>Shirt:</strong><br> 23</p>
+            <p><strong>Foot:</strong><br> Left</p>
+            <p><strong>Country:</strong><br> England</p>
+            <p><strong>Club:</strong><br> Manchester United</p>
+            <p><strong>Market Value:</strong><br> €37M</p>
+          </div>
+        </section>
+    
+        <section class="card graphic-section">
+          <div class="bar-graphic">
+            <div class="bar-row"><span class="bar-label">Shooting</span><div class="bar"><div class="bar-inner-red" style="width: 28%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Passing</span><div class="bar"><div class="bar-inner-green" style="width: 62%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Defending</span><div class="bar"><div class="bar-inner-green" style="width: 70%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Dribbling</span><div class="bar"><div class="bar-inner-orange" style="width: 35%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Positioning</span><div class="bar"><div class="bar-inner-orange" style="width: 57%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Weak Foot</span><div class="bar"><div class="bar-inner-orange" style="width: 50%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Skills</span><div class="bar"><div class="bar-inner-orange" style="width: 41%;"></div></div></div>
+          </div>
+        </section>
+    
+        <section class="positions">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Football_Field_Schematic.svg/720px-Football_Field_Schematic.svg.png?20140510151708">
+        </section>
+    
+        <section class="card career" style="grid-column: 1 / -1;">
+        <br>
+          <div class="career-stats">
+            <div><strong>Goals</strong><p>6</p></div>
+            <div><strong>Assists</strong><p>33</p></div>
+            <div><strong>Matches</strong><p>282</p></div>
+            <div><strong>Minutes</strong><p>22.043</p></div>
+            <div><strong>Yellow Cards</strong><p>72</p></div>
+            <div><strong>Red Cards</strong><p>1</p></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="fabio-balde" class="player-section hidden" data-name="Fabio Baldé">
+      <main class="container">
+        <section class="card">
+          <div class="profile">
+            <img src="https://images.fotmob.com/image_resources/playerimages/1666019.png" alt="Fabio Baldé">
+            <div>
+              <h2>Fabio Baldé</h2>
+              <p class="date-time">Updated On: 8-5-2025</p>
+            </div>
+          </div>
+          <div id="ratings-orange-main-stat">
+          <label class="rating-orange">5.7</label>
+          </div>
+          <div class="stats" id="orange-stats">
+            <p><strong>Height:</strong><br> 182cm</p>
+            <p><strong>Weight:</strong><br> 75kg</p>
+            <p><strong>Age:</strong><br> 19</p>
+            <p><strong>Shirt:</strong><br> 45</p>
+            <p><strong>Foot:</strong><br> Right</p>
+            <p><strong>Country:</strong><br> Germany</p>
+            <p><strong>Club:</strong><br> Hamburger SV</p>
+            <p><strong>Market Value:</strong><br> €1.8M</p>
+          </div>
+        </section>
+    
+        <section class="card graphic-section">
+          <div class="bar-graphic">
+            <div class="bar-row"><span class="bar-label">Shooting</span><div class="bar"><div class="bar-inner-green" style="width: 70%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Passing</span><div class="bar"><div class="bar-inner-orange" style="width: 54%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Defending</span><div class="bar"><div class="bar-inner-orange" style="width: 40%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Dribbling</span><div class="bar"><div class="bar-inner-green" style="width: 73%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Positioning</span><div class="bar"><div class="bar-inner-orange" style="width: 48%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Weak Foot</span><div class="bar"><div class="bar-inner-green" style="width: 61%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Skills</span><div class="bar"><div class="bar-inner-orange" style="width: 53%;"></div></div></div>
+          </div>
+        </section>
+    
+        <section class="positions">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Football_Field_Schematic.svg/720px-Football_Field_Schematic.svg.png?20140510151708">
+        </section>
+    
+        <section class="card career" style="grid-column: 1 / -1;">
+        <br>
+          <div class="career-stats">
+            <div><strong>Goals</strong><p>2</p></div>
+            <div><strong>Assists</strong><p>3</p></div>
+            <div><strong>Matches</strong><p>22</p></div>
+            <div><strong>Minutes</strong><p>712</p></div>
+            <div><strong>Yellow Cards</strong><p>2</p></div>
+            <div><strong>Red Cards</strong><p>0</p></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="lionel-messi" class="player-section hidden" data-name="Lionel Messi">
+      <main class="container">
+        <section class="card">
+          <div class="profile">
+            <img src="https://images.fotmob.com/image_resources/playerimages/30981.png" alt="Lionel Messi">
+            <div>
+              <h2>Lionel Messi</h2>
+              <p class="date-time">Updated On: 9-5-2025</p>
+            </div>
+          </div>
+          <div id="ratings-blue-main-stat">
+          <label class="rating-blue">9.1</label>
+          </div>
+          <div class="stats" id="blue-stats">
+            <p><strong>Height:</strong><br> 170cm</p>
+            <p><strong>Weight:</strong><br> 67kg</p>
+            <p><strong>Age:</strong><br> 37</p>
+            <p><strong>Shirt:</strong><br> 10</p>
+            <p><strong>Foot:</strong><br> Left</p>
+            <p><strong>Country:</strong><br> Argentina</p>
+            <p><strong>Club:</strong><br> Inter Miami</p>
+            <p><strong>Market Value:</strong><br> €25M</p>
+          </div>
+        </section>
+    
+        <section class="card graphic-section">
+          <div class="bar-graphic">
+            <div class="bar-row"><span class="bar-label">Shooting</span><div class="bar"><div class="bar-inner-blue" style="width: 98%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Passing</span><div class="bar"><div class="bar-inner-blue" style="width: 97%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Defending</span><div class="bar"><div class="bar-inner-orange" style="width: 55%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Dribbling</span><div class="bar"><div class="bar-inner-purple" style="width: 100%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Positioning</span><div class="bar"><div class="bar-inner-blue" style="width: 99%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Weak Foot</span><div class="bar"><div class="bar-inner-blue" style="width: 96%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Skills</span><div class="bar"><div class="bar-inner-blue" style="width: 92%;"></div></div></div>
+          </div>
+        </section>
+    
+        <section class="positions">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Football_Field_Schematic.svg/720px-Football_Field_Schematic.svg.png?20140510151708">
+        </section>
+    
+        <section class="card career" style="grid-column: 1 / -1;">
+        <br>
+          <div class="career-stats">
+            <div><strong>Goals</strong><p>859</p></div>
+            <div><strong>Assists</strong><p>381</p></div>
+            <div><strong>Matches</strong><p>1.097</p></div>
+            <div><strong>Minutes</strong><p>90.041</p></div>
+            <div><strong>Yellow Cards</strong><p>53</p></div>
+            <div><strong>Red Cards</strong><p>3</p></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="cristiano-ronaldo" class="player-section hidden" data-name="Cristiano Ronaldo">
+      <main class="container">
+        <section class="card">
+          <div class="profile">
+            <img src="https://images.fotmob.com/image_resources/playerimages/30893.png" alt="Cristiano Ronaldo">
+            <div>
+              <h2>Cristiano Ronaldo</h2>
+              <p class="date-time">Updated On: 9-5-2025</p>
+            </div>
+          </div>
+          <div id="ratings-green-main-stat">
+          <label class="rating-green">8.9</label>
+          </div>
+          <div class="stats" id="green-stats">
+            <p><strong>Height:</strong><br> 187cm</p>
+            <p><strong>Weight:</strong><br> 83kg</p>
+            <p><strong>Age:</strong><br> 40</p>
+            <p><strong>Shirt:</strong><br> 7</p>
+            <p><strong>Foot:</strong><br> Right</p>
+            <p><strong>Country:</strong><br> Portugal</p>
+            <p><strong>Club:</strong><br> Al Nassr</p>
+            <p><strong>Market Value:</strong><br> €17M</p>
+          </div>
+        </section>
+    
+        <section class="card graphic-section">
+          <div class="bar-graphic">
+            <div class="bar-row"><span class="bar-label">Shooting</span><div class="bar"><div class="bar-inner-purple" style="width: 100%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Passing</span><div class="bar"><div class="bar-inner-blue" style="width: 95%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Defending</span><div class="bar"><div class="bar-inner-orange" style="width: 59%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Dribbling</span><div class="bar"><div class="bar-inner-blue" style="width: 93%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Positioning</span><div class="bar"><div class="bar-inner-blue" style="width: 96%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Weak Foot</span><div class="bar"><div class="bar-inner-blue" style="width: 93%;"></div></div></div>
+            <div class="bar-row"><span class="bar-label">Skills</span><div class="bar"><div class="bar-inner-green" style="width: 87%;"></div></div></div>
+          </div>
+        </section>
+    
+        <section class="positions">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Football_Field_Schematic.svg/720px-Football_Field_Schematic.svg.png?20140510151708">
+        </section>
+    
+        <section class="card career" style="grid-column: 1 / -1;">
+        <br>
+          <div class="career-stats">
+            <div><strong>Goals</strong><p>934</p></div>
+            <div><strong>Assists</strong><p>257</p></div>
+            <div><strong>Matches</strong><p>1.277</p></div>
+            <div><strong>Minutes</strong><p>104.341</p></div>
+            <div><strong>Yellow Cards</strong><p>108</p></div>
+            <div><strong>Red Cards</strong><p>12</p></div>
           </div>
         </section>
       </main>

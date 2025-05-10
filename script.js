@@ -7,6 +7,9 @@ const players = [
   { name: "Fabio Baldé", id: "fabio-balde" },
   { name: "Lionel Messi", id: "lionel-messi" },
   { name: "Cristiano Ronaldo", id: "cristiano-ronaldo" },
+  { name: "David de Gea", id: "david-de-gea" },
+  { name: "Heung-min Son", id: "heung-min-son" },
+  { name: "Pelé", id: "pele" },
 ];
 
 searchBar.addEventListener("input", function (e) {
@@ -69,3 +72,22 @@ function returnhome() {
     section.classList.add("hidden");
   });
 }
+
+const topplayers = [
+  { name: "Milan", team: "PSV", goals: 30, assists: 5 },
+  { name: "Ivar", team: "Barcalona", goals: 28, assists: 7 },
+];
+
+const tbody = document.getElementById("leaderboard-body");
+
+topplayers.forEach((player, index) => {
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td class="rank">${index + 1}</td>
+    <td>${player.name}</td>
+    <td>${player.team}</td>
+    <td>${player.goals}</td>
+    <td>${player.assists}</td>
+  `;
+  tbody.appendChild(row);
+});

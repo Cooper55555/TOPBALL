@@ -419,7 +419,7 @@ tbody tr:hover {
   }
 
   .dropdown {
-    width: calc(100% - 48px);
+    width: calc(100% - 48.5px);
     top: 145px;
     right: 11px;
   }

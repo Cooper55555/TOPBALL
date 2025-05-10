@@ -74,8 +74,9 @@ function returnhome() {
 }
 
 const topplayers = [
-  { name: "Milan", team: "PSV", goals: 30, assists: 5 },
-  { name: "Ivar", team: "Barcalona", goals: 28, assists: 7 },
+  { name: "Lionel Messi", team: "Inter Miami", rating: "9.1" },
+  { name: "Pelé", team: "New York Cosmos", rating: "9.0" },
+  { name: "Cristiano Ronaldo", team: "Al Nassr", rating: "8.9" },
 ];
 
 const tbody = document.getElementById("leaderboard-body");
@@ -86,8 +87,7 @@ topplayers.forEach((player, index) => {
     <td class="rank">${index + 1}</td>
     <td>${player.name}</td>
     <td>${player.team}</td>
-    <td>${player.goals}</td>
-    <td>${player.assists}</td>
+    <td>${player.rating}</td>
   `;
   tbody.appendChild(row);
 });
